@@ -49,7 +49,7 @@
              var first=document.getElementById('password').value;
              var second=document.getelementById('confirm').value;
              if(second!=first)
-            document.getElementById('errConfirm').innerHTML=<span style='color:red'>Your password donot match!</span>
+            document.getElementById('errConfirm').innerHTML="<span style='color:red'>Your password donot match!</span>";
             else
             document.getElementById(div).innerHTML="OK";
             }
@@ -68,7 +68,7 @@
         count=count+1;
          }
         if(count==6)
-        document.getElementById('errFinal').innerHTML=<span style='color:red'>All the data you entered is correct!</span>
+        document.getElementById('errFinal').innerHTML="<span style='color:red'>All the data you entered is correct!</span>";
 
         }
         </script>
@@ -102,13 +102,13 @@
                      </tr>
                      <tr>
                          <td>Password</td>
-                         <td><input type="text" id="password" onkeyup="validate();" /></td>
+                         <td><input type="password" id="password" onkeyup="validate();" /></td>
                          <td><div id="errPassword"></div></td>
                      </tr>
                      <tr>
                          <td>Confirm Password</td>
-                         <td><input type="text" id="confirm" onkeyup="validate();" /></td>
-                         <td><div id="errConfirm></div></td>
+                         <td><input type="password" id="confirm" onkeyup="validate();" /></td>
+                         <td><div id="errConfirm"></div></td>
                      </tr>
                      <tr>
                          
